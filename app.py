@@ -53,6 +53,7 @@ def main():
         columns=list_log[0]
     )
     print(df_log)
+    st.header("sampleデータ")
 
     st.dataframe(df_sample)
     csv = convert_df(df_sample)
@@ -65,6 +66,7 @@ def main():
         key="browser-data"
     )
 
+    st.header("logデータ")
     st.dataframe(df_log)
     csv = convert_df(df_log)
     # df_sample.to_csv("measurement_sample.csv")
